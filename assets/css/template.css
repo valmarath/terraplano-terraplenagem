@@ -1,0 +1,415 @@
+/*@font-face {
+    src: url(font/futura/Futura\ Book\ font.ttf);
+    font-family: futura;
+}*/
+* {
+    box-sizing: border-box;
+    /*font-family: 'futura';*/
+    font-family: 'DM Sans', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #333533;
+    /*background-color: #0E606B;*/
+    /*background-color: #242423;*/
+}
+header {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    background-color: rgba(51, 53, 51, 0.7);/*talvez não usar*/
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    z-index: 2;
+}
+nav a, nav li{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 22.5px;
+    list-style-type: none;
+    font-weight: 500;
+}
+nav li {
+    margin-left: 25px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    max-width: 1340px;
+    width: 100%;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.menu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.menu nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.menus, .social_logo {
+    display: flex;
+}
+.container a:hover {
+    color: #DAA229;
+}
+.social_logo a:hover {
+    filter: invert(30%) sepia(85%) saturate(1000%)  brightness(84%) contrast(85%);
+}
+#home {
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(../images/sunset4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+#home .description{
+    margin-top: 200px;
+    max-width: 1340px;
+    justify-content: center;
+    text-align: center;
+    color: #e7e7e7;
+}
+.services {
+    display: flex;
+    max-width: 1340px;
+    background-color: #333533;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#services h2 {
+    color: #e8eddf;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-size: 35px;
+    letter-spacing: 0.02em;
+}
+#services img {
+    height: 150px;
+    width: fit-content;
+}
+#services h3{
+    margin-top: 1.5em;
+    font-size: 22.5px;
+    letter-spacing: 0.05em;
+}
+.urban, .countryside, .others {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 1.5rem;
+    color: #e8eddf;
+    /*color: #DAA229;*/
+    text-align: center;
+    flex-wrap: wrap;
+    flex: 1 1 30%;
+}
+#services p{
+    margin-top: -0.5em;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    word-wrap: break-word;
+    color: #e7e7e7;
+}
+.others button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    background-color: #DAA229;
+    color: #333533;
+}
+.others button:hover {
+    opacity: 65%;
+    cursor: pointer;
+}
+.others button a {
+    text-decoration: none;
+    color: #333533;;
+}
+.equipment {
+    display: flex;
+    max-width: 1340px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#equipment img{
+    width: 450px;
+    height: auto;
+}
+#equipment {
+    background-color: #242423;
+    /*background-color: #333533;*/
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#equipment h2 {
+    color: #e8eddf;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-size: 35px;
+    letter-spacing: 0.02em;
+}
+#equipment h3{
+    margin-top: 1.5em;
+    font-size: 22.5px;
+    letter-spacing: 0.05em;
+}
+.volvo, .hyundai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    color: #e8eddf;
+    /*color: #DAA229;*/
+    text-align: center;
+    flex-wrap: wrap;
+    flex: 1 1 30%;
+}
+#equipment p{
+    margin-top: -0.5em;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    word-wrap: break-word;
+    color: #e7e7e7;
+}
+.hyundai ul, .volvo ul{
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+    word-wrap: break-word;
+    color: #e7e7e7;
+    flex-wrap: wrap;
+    white-space: normal;
+}
+#equipment .hyundai img {
+    height: 316px;
+}
+.contact {
+    display: flex;
+    max-width: 1340px;
+    background-color: #333533;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.contact a{
+    text-decoration: none;
+    color: #e8eddf;
+}
+.contact_item p {
+    font-size: 18px;
+    text-decoration: underline;
+}
+#contact h2 {
+    color: #e8eddf;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-size: 35px;
+    letter-spacing: 0.02em;
+}
+#contact {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contact_item, .contact_item_mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 1.5rem;
+    color: #e8eddf;
+    /*color: #DAA229;*/
+    text-align: center;
+    flex-wrap: wrap;
+    flex: 1 1 30%;
+}
+.contact img {
+    opacity: 85%;
+}
+.contact_item p:hover{
+    opacity: 70%;
+}
+.contact_item a:hover{
+    opacity: 70%;
+}
+.contact h3 {
+    color: #DAA229;
+}
+.contact_item_mail img {
+    margin-top: 48px;
+}
+.contact_item_mail p {
+    font-size: 18px;
+    margin-top: -4px;
+}
+.menuMobile {
+    display: none;
+    height: 40px;
+    width: 40px;
+    margin-top: 13.5px;
+    margin-left: 10px;
+}
+.mm_line{
+    height:3px;
+    background-color: #DAA229;
+}
+footer {
+    display: flex;  
+    width: 100%;
+    background-color: #242423;
+    justify-content: center;
+}
+.copyright {
+    max-width: 1340px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12.5px;
+    color: #e8eddf;
+}
+.copy {
+    margin-left: 5px;
+}
+.dev {
+    margin-right: 5px;
+}
+@media (max-width:720px) {
+    header .container {
+        flex-direction: row;
+    }
+    .menus{
+        flex-direction: column;
+        display: none;
+        left: 0;
+        width: 100%;
+    }
+    header {
+        height: auto;
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 20px;
+    }
+    .social_logo {
+        display: none;
+    }
+    .menu nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav .menus {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        margin-top: 77px;
+        padding-top: 7.5px;
+        padding-bottom: 7.5px;
+        background-color: rgba(51, 53, 51, 0.7);/*talvez não usar*/
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        -moz-backdrop-filter: blur(5px);
+        -o-backdrop-filter: blur(5px);
+        -ms-backdrop-filter: blur(5px);
+        z-index: 2;
+    }
+    nav li {
+        margin-bottom: 5px;
+    }
+    #home .description{
+        margin-top: 150px;
+    }
+    .description h1 {
+        font-size: 26px;
+        margin: 15px;
+    }
+    .countryside, .others {
+        padding-top: 0rem;
+    }
+    #equipment .volvo img {
+        width: 350px;
+        height: auto;
+    }
+    #equipment .hyundai img {
+        width: 350px;
+        height: auto;
+        object-fit: cover;
+    }
+}
+@media (max-width:960px) {
+    nav li, nav a {
+        margin-left: 5px;
+    }
+    nav ul {
+        padding-left: 0px;
+    }
+    .volvo img, .hyundai img {
+        margin-top: -2rem;
+    }
+}
+@media (max-width:370px) {
+    #home .description{
+        margin-top: 60px;
+    }
+    .description h1 {
+        font-size: 24px;
+    }
+}

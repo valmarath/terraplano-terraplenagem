@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=0" />
+
+    <title>Terraplano - Terraplenagem</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/template.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if(document.querySelector(".menus").style.display == 'flex'){
+                    document.querySelector(".menus").style.display = 'none';
+                } else {
+                    document.querySelector(".menus").style.display = 'flex';
+                }
+            });
+            document.querySelector(".active").addEventListener("click", function(){
+                if(document.querySelector(".menus").style.display == 'flex'){
+                    document.querySelector(".menus").style.display = 'none';
+                } else if(document.querySelector(".menuMobile").style.display == 'flex'){
+                    document.querySelector(".menus").style.display = 'flex';
+                }
+            });
+            document.querySelector(".active2").addEventListener("click", function(){
+                if(document.querySelector(".menus").style.display == 'flex'){
+                    document.querySelector(".menus").style.display = 'none';
+                } else if(document.querySelector(".menuMobile").style.display == 'flex'){
+                    document.querySelector(".menus").style.display = 'flex';
+                }
+            });
+            document.querySelector(".active3").addEventListener("click", function(){
+                if(document.querySelector(".menus").style.display == 'flex'){
+                    document.querySelector(".menus").style.display = 'none';
+                } else if(document.querySelector(".menuMobile").style.display == 'flex'){
+                    document.querySelector(".menus").style.display = 'flex';
+                }
+            });
+            document.querySelector(".active4").addEventListener("click", function(){
+                if(document.querySelector(".menus").style.display == 'flex'){
+                    document.querySelector(".menus").style.display = 'none';
+                } else if(document.querySelector(".menuMobile").style.display == 'flex'){
+                    document.querySelector(".menus").style.display = 'flex';
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo_menu">
+            <a href=""><img alt="Terraplano Terraplenagem Logo" src="assets/icons/logo5.png"></a>
+        </div>
+        <div class="menu">
+            <nav>
+                <div class="menuMobile">
+                    <div class="mm_line"></div>
+                    <div class="mm_line"></div>
+                    <div class="mm_line"></div>
+                </div>
+                <ul class="menus">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li class="active2"><a href="#services">Serviços</a></li>
+                    <li class="active3"><a href="#equipment">Máquinas</a></li>
+                    <li class="active4"><a href="#contact">Contato</a></li>
+                </ul>
+                <ul class="social_logo">
+                    <li><a href="https://api.whatsapp.com/message/QGQA3Z7PCLB6C1" target="_blank"><img alt="Ícone do WhatsApp" src="assets/icons/whats.png"></a></li>
+                    <li><a href="https://www.facebook.com/terraplanoterraplenagem/" target="_blank"><img alt="Ícone do Facebook" src="assets/icons/facebook.png"></a></li>
+                    <li><a href="https://www.instagram.com/terraplanoterraplenagem/" target="_blank"><img alt="Ícone do Instagram" src="assets/icons/instagram.png"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+    <section id="home">
+        <div class="description">
+            <h1>A Terraplano é uma empresa focada em prover <em>serviços de
+                terraplenagem</em>, <strong>tanto em áreas urbanas quanto rurais</strong>, de forma ágil e eficaz. </br> </br>
+                Estamos sediados em <strong>Caxias do Sul</strong> e atuamos em <strong>cidades da Serra Gaúcha
+                e demais áreas do Rio Grande do Sul</strong>.
+            </h1>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Serviços</h2>
+        <div class="services">
+            <div class="urban">
+                <img alt="Ilustração de serviços urbanos" src="../terraplano/assets/images/urban2.png" />
+                <h3>Urbanos</h3>
+                <p>Serviços gerais de terraplenagem (comercial, urbana e industrial),
+                    como limpeza de aterros para construção, abertura de valas, escavação e nivelamento de terrenos, entre outros.</p>
+            </div>
+            <div class="countryside">
+                <img alt="Ilustração de serviços rurais"  src="assets/images/countryside2.png" />
+                <h3>Rurais</h3>
+                <p>Atuamos também no segmento rural, na abertura de açudes, destocamentos, drenagens,
+                    limpeza e nivelamento de campos, bem como na pavimentação de estradas e acessos.</p>
+            </div>
+            <div class="others">
+                <img alt="Ilustração de outros serviços"  src="../terraplano/assets/images/doubts2.png" />
+                <h3>Dúvidas?</h3>
+                <p>Não encontrou o serviço que buscava em nossa descrição, tem algum 
+                    questionamento e gostaria de conversar com a gente?
+                    Clique no botão abaixo!
+                </p>
+                <button><a href="#contact">Contato</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipment">
+        <h2>Máquinas</h2>
+        <div class="equipment">
+            <div class="volvo">
+                <img  alt="Escavadeira Volvo EC140D" src="assets/images/volvo2.png" loading="lazy" />
+                <h3>Volvo EC140D</h3>
+                <ul style="list-style: disc;">
+                    <li>Escavadeira compacta que traz consigo elevada produtividade e desempenho</li>
+                    <li>Versátil para serviços de pequeno e médio porte</li>
+                    <li>Peso operacional: 13.000 a 16.730 kg</li>
+                    <li>Potência bruta: 77,4 kW</li>
+                    <li>Capacidade da caçamba: 0,6 - 0,64 m³</li>
+                </ul>
+            </div>
+            <div class="hyundai">
+                <img alt="Escavadeira Hyundai Robex 220 LC-7" src="assets/images/hyundai5.png" loading="lazy" />
+                <h3>Hyundai Robex 220 LC-7</h3>
+                <ul style="list-style: disc;">
+                    <li>Escavadeira robusta, preparada para atender quaisquer demandas</li>
+                    <li>Recomendada para serviços de grande porte</li>
+                    <li>Peso operacional: 21.930 kg</li>
+                    <li>Potência bruta: 110 kW</li>
+                    <li>Capacidade da caçamba: 1,05 m³</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <div class="contact">
+            <div class="contact_item_mail">
+                <img alt="Ícone de E-mail" src="../terraplano/assets/images/email1.png" />
+                <h3>Email</h3>
+                <p>terraplanoterraplenagem@gmail.com</p>
+            </div>
+            <div class="contact_item">
+                <a href="tel:01554996968110">
+                    <img alt="Ícone de Telefone/Smartphone" src="../terraplano/assets/images/phone1.png" />
+                    <h3>Telefone</h3>
+                    <p>(54) 99696-8110</p>
+                </a>
+            </div>
+            <div class="contact_item">
+                <a href="https://api.whatsapp.com/message/QGQA3Z7PCLB6C1" target="_blank">
+                    <img alt="Ícone do Whatsapp" src="../terraplano/assets/images/whats1.png" />
+                    <h3>WhatsApp</h3>
+                    <p>Converse conosco</p>
+                </a>    
+            </div>
+            <div class="contact_item">
+                <a href="https://www.facebook.com/terraplanoterraplenagem/" target="_blank">
+                    <img alt="Ícone do Facebook" src="../terraplano/assets/images/facebook1.png" />
+                    <h3>Facebook</h3>
+                    <p>Visite nossa página</p>
+                </a>    
+            </div>
+            <div class="contact_item">
+                <a href="https://www.instagram.com/terraplanoterraplenagem/" target="_blank">
+                    <img alt="Ícone do Instagram" src="../terraplano/assets/images/instagram1.png" />
+                    <h3>Instagram</h3>
+                    <p>Siga nosso instagram</p>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="copyright">
+        <div class="copy">
+            <p>© COPYRIGHT 2021 - TERRAPLANO TERRAPLENAGEM LTDA (CNPJ: 42.405.020/0001-92)</p>
+        </div>
+        <div class="dev">
+            <p>Desenvolvido por: Gabriel Melo Valmarath</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
